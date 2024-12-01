@@ -16,6 +16,12 @@ A front-end implementation of a login and sign-up system designed for user authe
 
 
 ## 📝 Installation and Usage  
+/login-sign-in
+├── /css # Styling for the pages
+├── /js # JavaScript logic for form validation and interactivity
+├── index.html # Main entry page
+├── signin.html # Sign-in form page
+├── welcome.html # Post-login welcome page
 
 1. Clone the repository:  
    ```bash  
