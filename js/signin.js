@@ -29,6 +29,6 @@ btn.addEventListener("click", (e) => {
     else
     {
         error.classList.remove("d-none");
-        console.log('email not found');
+        errorPass.classList.add("d-none");
     }
 });
