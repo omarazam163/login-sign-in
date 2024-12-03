@@ -6,13 +6,12 @@ let error = document.getElementById("error-email");
 let errorPass = document.getElementById("error-pass");
 
 
+
 btn.addEventListener("click", (e) => {
     e.preventDefault();
-    if(users.find(function (e) { return e.email==email.value.trim()}))
+    let userObj= users.find((e) => e.email==email.value.trim());
+    if(userObj)
     {
-        let userObj= users.find(function (e) {
-          return e.email == email.value.trim();
-        });
         if(userObj.password == password.value.trim())
         {
             error.classList.add("d-none");
@@ -24,6 +23,7 @@ btn.addEventListener("click", (e) => {
         {
             error.classList.add("d-none");
             errorPass.classList.remove("d-none");
+            password.value = "";
         }
     }
     else
